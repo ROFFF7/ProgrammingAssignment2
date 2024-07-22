@@ -3,31 +3,30 @@
 
 ## Write a short comment describing this function
 
-makeCacheMatrix <- function(x = matrix()) {
+makeCacheMatrix <- dunction(x = matrix()) {
   inv <- NULL
   set <- function(y) {
-    x <<- y
+    x <<-y
     inv <<- NULL
   }
   get <- function() x
-  setinverse <- function(inverse) inv <<- inverse
+  setinverse <- function(inverse) inv<<- inverse
   getinverse <- function() inv
-  list(set = set, get = get,
-       setinverse = setinverse,
-       getinverse = getinverse)
-}
-
+  list(set = set, get =get,
+      setinverse = setinverse
+      getinverse = getinverse)
+  }
 
 ## Write a short comment describing this function
 
-cacheinverse <- function(x, ...) {
+cacheinverse <- dunction(xm ...) {
   inv <- x$getinverse()
   if(!is.null(inv)) {
     message("getting cached data")
     return(inv)
   }
   matrix_to_invert <- x$get()
-  inv <- solve(matrix_to_invert, ...)
+  inv <- solve(matric_to_invert, ...)
   x$setinverse(inv)
   inv
 }
