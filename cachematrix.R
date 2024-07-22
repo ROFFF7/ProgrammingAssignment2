@@ -1,7 +1,9 @@
 ## Put comments here that give an overall description of what your
-## functions do
+## We can calculate the inverse matrix more simply.
 
-## Write a short comment describing this function
+## makeCacheMatrix can set the elements of the matrix, 
+## get the elements of the matrix, set the elements of the matrix inverse
+## and get the elements of the matrix inverse
 
 makeCacheMatrix <- dunction(x = matrix()) {
   inv <- NULL
@@ -17,7 +19,7 @@ makeCacheMatrix <- dunction(x = matrix()) {
       getinverse = getinverse)
   }
 
-## Write a short comment describing this function
+## cacheinverse calculates the inverse of the matrix. 
 
 cacheinverse <- dunction(xm ...) {
   inv <- x$getinverse()
